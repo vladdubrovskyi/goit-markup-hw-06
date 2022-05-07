@@ -523,18 +523,20 @@
             placeholder="Введите текст"
           ></textarea>
 
-          <input
-            type="checkbox"
-            class="checkbox-modal"
-            id="check-modal"
-            name="policy-acceptance"
-            value="policy-acceptance"
-          />
-          <label for="check-modal" class="check-modal-label"
-            >Соглашаюсь с рассылкой и принимаю
-            <a href="">Условия договора</a></label
-          >
-          <button type="submit">Отправить</button>
+          <div class="check-thumb">
+            <input
+              type="checkbox"
+              class="checkbox-modal visually-hidden"
+              id="check-modal"
+              name="policy-acceptance"
+              value="policy-acceptance"
+            />
+            <label for="check-modal" class="check-modal-label"
+              >Соглашаюсь с рассылкой и принимаю &#8201
+              <a href="" class="modal-label-link">Условия договора</a></label
+            >
+          </div>
+          <button type="submit" class="modal-form-button">Отправить</button>
         </form>
       </div>
     </div>
